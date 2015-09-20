@@ -1,5 +1,5 @@
 # fstunnel
-TCP tunnel over a shared filesystem. Useful for getting out of VMs running VPNs that take over all the routes.
+TCP tunnel over the filesystem. Useful for getting out of VMs running VPNs that take over all the routes.
 
 Tunnels TCP traffic from point `a.py` to point `b.py` (back and forth).
 
