@@ -233,7 +233,7 @@ def clean_dir(dir_path):
 
 # 8 bytes float time.time() + 16 bytes os.urandom = 24 bytes UUID
 def get_uuid_bytes():
-	return struct.pack('>d', time.clock()) + os.urandom(16)
+	return struct.pack('>d', time.monotonic()) + os.urandom(16)
 
 # a 32 chars long url safe base64 ('+/' -> '-_') encoded string UUID
 def get_uuid_base64():
